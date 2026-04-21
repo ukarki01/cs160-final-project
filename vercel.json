@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "cs160-final-project/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "cs160-final-project/wsgi.py"
+    }
+  ]
+}
